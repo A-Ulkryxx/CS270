@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Development\CS270\.metadata\Project1\Project1\Source.cpp(44,43): warning C4305: 'initializing': truncation from '__int64' to 'unsigned int'
+C:\Development\CS270\.metadata\Project1\Project1\Source.cpp(44,26): warning C4309: 'initializing': truncation of constant value
+  Project1.vcxproj -> C:\Development\CS270\.metadata\Project1\x64\Debug\Project1.exe

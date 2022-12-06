@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+
         //PART1
     int i;  	// an integer value
     int *pi;	// a pointer to an integer value
@@ -11,12 +12,16 @@ int main() {
     printf("i: %d, pi: %p > *pi: %d\n", i, pi, *pi);
     
     // place additional code here
+
+
         //PART2
     int **ppi;
     ppi = &pi ; // set ppi to the address of pi
     
     printf("i: %d, pi: %p > *pi: %d, ppi: %p > **ppi: %d \n", i, pi, *pi, ppi, **ppi);
     
+
+
         //PART3
     int memory[] = {1,2,3,4,5,6,7,8,9};
     int *pm;
@@ -27,11 +32,23 @@ int main() {
         pm++;
     }
 
+
         //PART4
     int *nm;
     pm = memory;
     nm = (int *) *pm;
-    printf ("pm: %p, nm: %p\n", pm, nm);
+    printf ("pm: %p, nm: %p\n", pm, nm);   
 
-    return 0;    
+        //PART5 
+    char *cp;
+    cp = (char *) pm;
+    
+    for (int i=0; i<36; i++) {
+      printf ("cp: %p > *cp: 0x%02X\n", cp, *cp);
+      cp++;
+      }   
+
+
+        //PART6
+      return 0;
 } 
